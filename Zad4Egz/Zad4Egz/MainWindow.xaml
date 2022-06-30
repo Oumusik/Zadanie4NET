@@ -1,0 +1,33 @@
+﻿<Window x:Class="Zad4Egz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad4Egz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <ListBox
+            Name="GrupySamochodow"
+            DataContext="{DynamicResource DaneProdukty}"
+            ItemsSource="{Binding XPath=Grupa}" Margin="0,0,-0.4,2"
+            >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding XPath=Nazwa}"/>
+                </DataTemplate>
+
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button
+            Grid.Row="2" Click="WyświetlGrupę" Margin="0,0,-0.4,0" FontSize="25px" Background="LimeGreen"
+            >SHOW</Button>
+
+    </Grid>
+</Window>

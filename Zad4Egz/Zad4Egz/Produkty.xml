@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GrupySamochodow>
+	<Grupa>
+		<Nazwa>Samochody</Nazwa>
+		<Produkty>
+			<Produkt
+			id="1">
+				<Nazwa>AUDI</Nazwa>
+				<Cena>370.000</Cena>
+				<Ilość>1</Ilość>
+				<Odmiana>
+					<Nazwa>RS6</Nazwa>
+				</Odmiana>
+				<KrajPochodzenia Kod="DE">
+					<Nazwa>Niemcy</Nazwa>
+				</KrajPochodzenia>
+			</Produkt>
+			<Produkt
+			  id="2">
+				<Nazwa>FORD</Nazwa>
+				<Cena>120.000</Cena>
+				<Ilość>1</Ilość>
+				<Odmiana>
+					<Nazwa>Mustang</Nazwa>
+				</Odmiana>
+				<KrajPochodzenia Kod="US">
+					<Nazwa>Amieryka</Nazwa>
+				</KrajPochodzenia>
+			</Produkt>
+			<Produkt
+			  id="3">
+				<Nazwa>BMW </Nazwa>
+				<Cena>600.000</Cena>
+				<Ilość>1</Ilość>
+				<Odmiana>
+					<Nazwa>M5 competition</Nazwa>
+				</Odmiana>
+				<KrajPochodzenia Kod="DE">
+					<Nazwa>Niemcy</Nazwa>
+				</KrajPochodzenia>
+			</Produkt>
+		</Produkty>
+	</Grupa>
+
+</GrupySamochodow>
